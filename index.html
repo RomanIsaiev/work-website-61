@@ -410,7 +410,7 @@
           </div>
         </section>
       </div>
-      <section class="buy-section">
+      <section class="buy-section" id="register">
         <div class="marquee-container marq-top">
           <p class="marquee-text">встигніть Придбати зі знижкою 90%</p>
         </div>
@@ -420,7 +420,9 @@
             <p class="price"><span>3000грн</span> 290 грн</p>
           </div>
           <div class="header-button-container">
-            <button class="header-button buy-btn">купити курс</button>
+            <button class="header-button buy-btn" data-modal-open>
+              купити курс
+            </button>
             <div class="header-sale-mark">
               <picture
                 ><source
@@ -1100,10 +1102,27 @@
         </a>
       </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="40"
+            height="40"
+            alt="close"
+          />
+        </button>
+        <div id="kwiga-widget-1724080343000"></div>
+      </div>
+    </div>
     <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/js-modal.js" type="module"></script>
     <script src="./src/js/marquee.js" type="module"></script>
     <script src="./src/js/swiper.js" type="module"></script>
     <script src="./src/js/questions.js" type="module"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1724080343000&uuid=40fd3040-9622-462b-8277-0ad54a83b25a&producer=https://kwiga.com/"
+    ></script>
   </body>
 </html>
