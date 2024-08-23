@@ -13,7 +13,11 @@
   <body>
     <header class="header">
       <div class="container">
-        <p class="course-start">Старт курсу: 11.08</p>
+        <p class="course-start">
+          Старт курсу: <span id="dateElement"></span>.<span
+            id="monthElement"
+          ></span>
+        </p>
       </div>
     </header>
     <main>
@@ -127,14 +131,14 @@
                     ./src/img/bonus/bonus-image-01-1x.png 1x,
                     ./src/img/bonus/bonus-image-01-2x.png 2x
                   "
-                  width="150"
-                  height="192" />
+                  width="220"
+                  height="184" />
                 <img
                   class="bonus-image"
                   src="./src/img/bonus/bonus-image-01-1x.png"
                   alt="bonus"
-                  width="150"
-                  height="192"
+                  width="220"
+                  height="184"
               /></picture>
               <div class="text-wrapper">
                 <p class="bonus-name">
@@ -149,14 +153,14 @@
                     ./src/img/bonus/bonus-image-02-1x.png 1x,
                     ./src/img/bonus/bonus-image-02-2x.png 2x
                   "
-                  width="150"
-                  height="192" />
+                  width="220"
+                  height="184" />
                 <img
                   class="bonus-image"
                   src="./src/img/bonus/bonus-image-02-1x.png"
                   alt="bonus"
-                  width="150"
-                  height="192"
+                  width="220"
+                  height="184"
               /></picture>
               <div class="text-wrapper">
                 <p class="bonus-name">Топ 5 якісних смазок для вас обох</p>
@@ -169,14 +173,14 @@
                     ./src/img/bonus/bonus-image-03-1x.png 1x,
                     ./src/img/bonus/bonus-image-03-2x.png 2x
                   "
-                  width="150"
-                  height="192" />
+                  width="220"
+                  height="184" />
                 <img
                   class="bonus-image"
                   src="./src/img/bonus/bonus-image-03-1x.png"
                   alt="bonus"
-                  width="150"
-                  height="192"
+                  width="220"
+                  height="184"
               /></picture>
               <div class="text-wrapper">
                 <p class="bonus-name">Рейтинг найкращих іграшок для пар</p>
@@ -1116,6 +1120,7 @@
       </div>
     </div>
     <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/changeDate.js" type="module"></script>
     <script src="./src/js/js-modal.js" type="module"></script>
     <script src="./src/js/marquee.js" type="module"></script>
     <script src="./src/js/swiper.js" type="module"></script>
